@@ -1,0 +1,518 @@
+2019-03-11 14:32:27.039 [restartedMain] INFO  com.beeworkshop.spaback.SpabackApplication -
+				Starting SpabackApplication on YNCLEITAO10 with PID 5756 (F:\project\javaprj\spaback\target\classes started by Administrator in F:\project\javaprj\spaback)
+2019-03-11 14:32:27.039 [restartedMain] INFO  com.beeworkshop.spaback.SpabackApplication -
+				No active profile set, falling back to default profiles: default
+2019-03-11 14:32:34.247 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+				Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articlesController': Unsatisfied dependency expressed through field 'articlesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.beeworkshop.spaback.service.ArticlesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-03-11 14:32:34.669 [restartedMain] ERROR org.springframework.boot.SpringApplication -
+				Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'articlesController': Unsatisfied dependency expressed through field 'articlesService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.beeworkshop.spaback.service.ArticlesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.beeworkshop.spaback.SpabackApplication.main(SpabackApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.beeworkshop.spaback.service.ArticlesService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 24 common frames omitted
+2019-03-11 14:39:19.924 [restartedMain] INFO  com.beeworkshop.spaback.SpabackApplication -
+				Starting SpabackApplication on YNCLEITAO10 with PID 6728 (F:\project\javaprj\spaback\target\classes started by Administrator in F:\project\javaprj\spaback)
+2019-03-11 14:39:19.939 [restartedMain] INFO  com.beeworkshop.spaback.SpabackApplication -
+				No active profile set, falling back to default profiles: default
+2019-03-11 14:39:27.504 [restartedMain] INFO  com.beeworkshop.spaback.SpabackApplication -
+				Started SpabackApplication in 8.076 seconds (JVM running for 8.925)
+2019-03-11 14:43:02.184 [http-nio-8090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+				Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2019-03-11 14:46:05.571 [http-nio-8090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2019-03-11 14:46:08.052 [http-nio-8090-exec-3] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2019-03-11 14:46:08.067 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.LoginDao.getLoginUser -
+				==>  Preparing: SELECT u.id userId, u.username username, u.password password, u.nickname nickName FROM sys_user u WHERE u.username = ? AND u.password = ? AND u.delete_status = '1' 
+2019-03-11 14:46:08.105 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.LoginDao.getLoginUser -
+				==> Parameters: admin(String), 123456(String)
+2019-03-11 14:46:11.601 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.LoginDao.getLoginUser -
+				<==      Total: 1
+2019-03-11 14:46:11.649 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:46:11.650 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: admin(String)
+2019-03-11 14:46:12.227 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 1
+2019-03-11 14:46:12.518 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:46:12.519 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==> Parameters: 
+2019-03-11 14:46:12.542 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				<==      Total: 10
+2019-03-11 14:46:12.544 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:46:12.544 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==> Parameters: 
+2019-03-11 14:46:12.547 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				<==      Total: 10
+2019-03-11 14:46:25.879 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:46:25.881 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: admin(String)
+2019-03-11 14:46:25.887 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 1
+2019-03-11 14:46:25.888 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:46:25.889 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==> Parameters: 
+2019-03-11 14:46:25.892 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				<==      Total: 10
+2019-03-11 14:46:25.893 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:46:25.893 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==> Parameters: 
+2019-03-11 14:46:25.897 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				<==      Total: 10
+2019-03-11 14:46:28.699 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:46:28.700 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: admin(String)
+2019-03-11 14:46:28.709 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 1
+2019-03-11 14:46:28.711 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:46:28.711 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==> Parameters: 
+2019-03-11 14:46:28.714 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				<==      Total: 10
+2019-03-11 14:46:28.716 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:46:28.718 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==> Parameters: 
+2019-03-11 14:46:28.723 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				<==      Total: 10
+2019-03-11 14:46:52.782 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:46:52.783 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:46:52.818 [http-nio-8090-exec-4] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-03-11 14:46:52.818 [http-nio-8090-exec-4] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==> Parameters: 
+2019-03-11 14:46:53.386 [http-nio-8090-exec-4] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				<==      Total: 1
+2019-03-11 14:46:53.387 [http-nio-8090-exec-4] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-03-11 14:46:53.388 [http-nio-8090-exec-4] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:46:53.430 [http-nio-8090-exec-4] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				<==      Total: 5
+2019-03-11 14:47:42.662 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:47:42.663 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:47:42.706 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.ArticlesDao.addArticle -
+				==>  Preparing: INSERT INTO article(content) VALUES(?) 
+2019-03-11 14:47:42.707 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.ArticlesDao.addArticle -
+				==> Parameters: 活着(String)
+2019-03-11 14:47:42.887 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.ArticlesDao.addArticle -
+				<==    Updates: 1
+2019-03-11 14:47:43.036 [http-nio-8090-exec-7] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:47:43.036 [http-nio-8090-exec-7] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:47:43.037 [http-nio-8090-exec-7] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-03-11 14:47:43.038 [http-nio-8090-exec-7] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==> Parameters: 
+2019-03-11 14:47:43.040 [http-nio-8090-exec-7] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				<==      Total: 1
+2019-03-11 14:47:43.042 [http-nio-8090-exec-7] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-03-11 14:47:43.045 [http-nio-8090-exec-7] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:47:43.051 [http-nio-8090-exec-7] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				<==      Total: 6
+2019-03-11 14:48:17.697 [http-nio-8090-exec-8] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:48:17.701 [http-nio-8090-exec-8] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:48:17.712 [http-nio-8090-exec-8] DEBUG c.b.spaback.dao.ArticlesDao.updateArticle -
+				==>  Preparing: UPDATE article SET content = ? WHERE id = ? 
+2019-03-11 14:48:17.714 [http-nio-8090-exec-8] DEBUG c.b.spaback.dao.ArticlesDao.updateArticle -
+				==> Parameters: 好兵帅克(String), 19(Integer)
+2019-03-11 14:48:17.786 [http-nio-8090-exec-8] DEBUG c.b.spaback.dao.ArticlesDao.updateArticle -
+				<==    Updates: 1
+2019-03-11 14:48:17.966 [http-nio-8090-exec-10] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:48:17.966 [http-nio-8090-exec-10] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:48:17.966 [http-nio-8090-exec-10] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-03-11 14:48:17.966 [http-nio-8090-exec-10] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==> Parameters: 
+2019-03-11 14:48:17.966 [http-nio-8090-exec-10] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				<==      Total: 1
+2019-03-11 14:48:17.966 [http-nio-8090-exec-10] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-03-11 14:48:17.967 [http-nio-8090-exec-10] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==> Parameters: 0(Integer), 10(Integer)
+2019-03-11 14:48:17.972 [http-nio-8090-exec-10] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				<==      Total: 6
+2019-03-11 14:48:29.182 [http-nio-8090-exec-5] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:48:29.183 [http-nio-8090-exec-5] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:48:29.184 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:48:29.185 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:48:29.186 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:48:29.215 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:48:29.243 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-03-11 14:48:29.247 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==> Parameters: 
+2019-03-11 14:48:29.250 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				<==      Total: 1
+2019-03-11 14:48:29.251 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-03-11 14:48:29.252 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:48:29.282 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				==>  Preparing: SELECT id roleId, role_name roleName FROM sys_role WHERE delete_status='1' 
+2019-03-11 14:48:29.282 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				==> Parameters: 
+2019-03-11 14:48:29.332 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				<==      Total: 3
+2019-03-11 14:48:29.396 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				<==      Total: 19
+2019-03-11 14:48:41.630 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:48:41.633 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: admin(String)
+2019-03-11 14:48:41.636 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 1
+2019-03-11 14:48:41.639 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:48:41.641 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==> Parameters: 
+2019-03-11 14:48:41.644 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				<==      Total: 10
+2019-03-11 14:48:41.645 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:48:41.646 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==> Parameters: 
+2019-03-11 14:48:41.650 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				<==      Total: 10
+2019-03-11 14:48:43.903 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:48:43.905 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: admin(String)
+2019-03-11 14:48:43.911 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 1
+2019-03-11 14:48:43.913 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==>  Preparing: SELECT p.menu_code menuCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:48:43.915 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				==> Parameters: 
+2019-03-11 14:48:43.919 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllMenus -
+				<==      Total: 10
+2019-03-11 14:48:43.920 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==>  Preparing: SELECT p.permission_code permissionCode FROM sys_permission p ORDER BY p.id 
+2019-03-11 14:48:43.921 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				==> Parameters: 
+2019-03-11 14:48:43.923 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.listAllAuthors -
+				<==      Total: 10
+2019-03-11 14:51:04.061 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:51:04.063 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:51:04.066 [http-nio-8090-exec-1] DEBUG c.beeworkshop.spaback.dao.UsersDao.verifyUsername -
+				==>  Preparing: SELECT count(0) FROM sys_user WHERE username = ? AND delete_status='1' 
+2019-03-11 14:51:04.067 [http-nio-8090-exec-1] DEBUG c.beeworkshop.spaback.dao.UsersDao.verifyUsername -
+				==> Parameters: beeworkshop(String)
+2019-03-11 14:51:04.070 [http-nio-8090-exec-1] DEBUG c.beeworkshop.spaback.dao.UsersDao.verifyUsername -
+				<==      Total: 1
+2019-03-11 14:51:04.071 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addUser -
+				==>  Preparing: INSERT INTO sys_user(username, password, nickname,role_id) VALUES(?, ?, ?, ?) 
+2019-03-11 14:51:04.072 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addUser -
+				==> Parameters: beeworkshop(String), 123456(String), bee(String), 3(Integer)
+2019-03-11 14:51:04.147 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addUser -
+				<==    Updates: 1
+2019-03-11 14:51:04.177 [http-nio-8090-exec-8] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:51:04.179 [http-nio-8090-exec-8] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:51:04.180 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-03-11 14:51:04.181 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==> Parameters: 
+2019-03-11 14:51:04.183 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				<==      Total: 1
+2019-03-11 14:51:04.184 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-03-11 14:51:04.185 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:51:04.195 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				<==      Total: 26
+2019-03-11 14:51:40.944 [http-nio-8090-exec-10] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:51:40.945 [http-nio-8090-exec-10] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:51:41.006 [http-nio-8090-exec-10] DEBUG com.beeworkshop.spaback.dao.UsersDao.updateUser -
+				==>  Preparing: UPDATE sys_user SET nickname = ? ,role_id = ? ,delete_status = ? WHERE id = ? and id != 10001 
+2019-03-11 14:51:41.007 [http-nio-8090-exec-10] DEBUG com.beeworkshop.spaback.dao.UsersDao.updateUser -
+				==> Parameters: balabala(String), 1(Integer), 1(String), 10005(Integer)
+2019-03-11 14:51:41.158 [http-nio-8090-exec-10] DEBUG com.beeworkshop.spaback.dao.UsersDao.updateUser -
+				<==    Updates: 1
+2019-03-11 14:51:42.199 [http-nio-8090-exec-6] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:51:42.201 [http-nio-8090-exec-6] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:51:42.211 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-03-11 14:51:42.212 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==> Parameters: 
+2019-03-11 14:51:42.226 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				<==      Total: 1
+2019-03-11 14:51:42.228 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-03-11 14:51:42.230 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:51:42.242 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				<==      Total: 26
+2019-03-11 14:51:58.362 [http-nio-8090-exec-5] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:51:58.363 [http-nio-8090-exec-5] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:51:58.366 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.updateUser -
+				==>  Preparing: UPDATE sys_user SET nickname = ? ,role_id = ? ,delete_status = ? WHERE id = ? and id != 10001 
+2019-03-11 14:51:58.368 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.updateUser -
+				==> Parameters: 超级用户(String), 1(Integer), 1(String), 10003(Integer)
+2019-03-11 14:51:58.408 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.UsersDao.updateUser -
+				<==    Updates: 1
+2019-03-11 14:51:59.442 [http-nio-8090-exec-9] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:51:59.442 [http-nio-8090-exec-9] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:51:59.444 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-03-11 14:51:59.445 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==> Parameters: 
+2019-03-11 14:51:59.451 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				<==      Total: 1
+2019-03-11 14:51:59.452 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-03-11 14:51:59.453 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:51:59.461 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				<==      Total: 26
+2019-03-11 14:52:04.246 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:52:04.246 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:52:04.248 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				==>  Preparing: SELECT r.id roleId, r.role_name roleName, u.id userId, u.nickname nickname, p.id permissionId, p.menu_code menuCode, p.menu_name menuName, p.permission_name permissionName FROM sys_role r LEFT JOIN sys_user u ON r.id = u.role_id AND u.delete_status = '1' LEFT JOIN sys_role_permission rp ON r.id = rp.role_id AND rp.delete_status = '1' LEFT JOIN sys_permission p ON rp.permission_id = p.id WHERE r.delete_status = '1' ORDER BY r.id, p.id 
+2019-03-11 14:52:04.249 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				==> Parameters: 
+2019-03-11 14:52:04.252 [http-nio-8090-exec-2] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:52:04.255 [http-nio-8090-exec-2] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:52:04.258 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.listAllPerms -
+				==>  Preparing: SELECT p.id id, p.menu_name menuName, p.permission_name permissionName, p.required_permission requiredPerm FROM sys_permission p 
+2019-03-11 14:52:04.259 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.listAllPerms -
+				==> Parameters: 
+2019-03-11 14:52:04.276 [http-nio-8090-exec-3] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				<==      Total: 26
+2019-03-11 14:52:04.285 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.listAllPerms -
+				<==      Total: 10
+2019-03-11 14:52:46.674 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:52:46.675 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:52:46.677 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addRole -
+				==>  Preparing: INSERT INTO sys_role(role_name) VALUES(?) 
+2019-03-11 14:52:46.678 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addRole -
+				==> Parameters: 女神(String)
+2019-03-11 14:52:46.697 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addRole -
+				<==    Updates: 1
+2019-03-11 14:52:46.701 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addRolePerms -
+				==>  Preparing: INSERT INTO sys_role_permission(role_id, permission_id) VALUES (?, ?) , (?, ?) , (?, ?) , (?, ?) 
+2019-03-11 14:52:46.702 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addRolePerms -
+				==> Parameters: 4(String), 101(Integer), 4(String), 102(Integer), 4(String), 601(Integer), 4(String), 701(Integer)
+2019-03-11 14:52:46.704 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.addRolePerms -
+				<==    Updates: 4
+2019-03-11 14:52:46.774 [http-nio-8090-exec-8] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":1,"nickname":"超级用户23","roleName":"管理员","permissionList":["article:list","user:list","user:add","role:update","article:add","role:list","article:update","user:update","role:delete","role:add"],"userId":10003}
+2019-03-11 14:52:46.775 [http-nio-8090-exec-8] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, user:add, role:update, article:add, role:list, article:update, user:update, role:delete, role:add]
+2019-03-11 14:52:46.776 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				==>  Preparing: SELECT r.id roleId, r.role_name roleName, u.id userId, u.nickname nickname, p.id permissionId, p.menu_code menuCode, p.menu_name menuName, p.permission_name permissionName FROM sys_role r LEFT JOIN sys_user u ON r.id = u.role_id AND u.delete_status = '1' LEFT JOIN sys_role_permission rp ON r.id = rp.role_id AND rp.delete_status = '1' LEFT JOIN sys_permission p ON rp.permission_id = p.id WHERE r.delete_status = '1' ORDER BY r.id, p.id 
+2019-03-11 14:52:46.776 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				==> Parameters: 
+2019-03-11 14:52:46.831 [http-nio-8090-exec-8] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				<==      Total: 30
+2019-03-11 14:53:47.746 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.LoginDao.getLoginUser -
+				==>  Preparing: SELECT u.id userId, u.username username, u.password password, u.nickname nickName FROM sys_user u WHERE u.username = ? AND u.password = ? AND u.delete_status = '1' 
+2019-03-11 14:53:47.747 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.LoginDao.getLoginUser -
+				==> Parameters: beeworkshop(String), 123456(String)
+2019-03-11 14:53:47.751 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.LoginDao.getLoginUser -
+				<==      Total: 1
+2019-03-11 14:53:47.784 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:53:47.785 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: beeworkshop(String)
+2019-03-11 14:53:47.794 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 7
+2019-03-11 14:53:49.841 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:53:49.842 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:53:49.847 [http-nio-8090-exec-3] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-03-11 14:53:49.848 [http-nio-8090-exec-3] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==> Parameters: 
+2019-03-11 14:53:49.852 [http-nio-8090-exec-3] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				<==      Total: 1
+2019-03-11 14:53:49.853 [http-nio-8090-exec-3] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-03-11 14:53:49.854 [http-nio-8090-exec-3] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:53:49.861 [http-nio-8090-exec-3] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				<==      Total: 6
+2019-03-11 14:53:52.883 [http-nio-8090-exec-2] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:53:52.884 [http-nio-8090-exec-2] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:53:52.886 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-03-11 14:53:52.887 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==> Parameters: 
+2019-03-11 14:53:52.896 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				<==      Total: 1
+2019-03-11 14:53:52.897 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-03-11 14:53:52.898 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:53:52.903 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:53:52.903 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:53:52.903 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:53:52.904 [http-nio-8090-exec-1] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:53:52.905 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				==>  Preparing: SELECT id roleId, role_name roleName FROM sys_role WHERE delete_status='1' 
+2019-03-11 14:53:52.905 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				==> Parameters: 
+2019-03-11 14:53:52.907 [http-nio-8090-exec-1] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				<==      Total: 4
+2019-03-11 14:53:52.940 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				<==      Total: 26
+2019-03-11 14:53:55.369 [http-nio-8090-exec-10] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:53:55.369 [http-nio-8090-exec-10] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:53:55.389 [http-nio-8090-exec-6] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:53:55.390 [http-nio-8090-exec-6] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:53:55.392 [http-nio-8090-exec-10] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				==>  Preparing: SELECT r.id roleId, r.role_name roleName, u.id userId, u.nickname nickname, p.id permissionId, p.menu_code menuCode, p.menu_name menuName, p.permission_name permissionName FROM sys_role r LEFT JOIN sys_user u ON r.id = u.role_id AND u.delete_status = '1' LEFT JOIN sys_role_permission rp ON r.id = rp.role_id AND rp.delete_status = '1' LEFT JOIN sys_permission p ON rp.permission_id = p.id WHERE r.delete_status = '1' ORDER BY r.id, p.id 
+2019-03-11 14:53:55.393 [http-nio-8090-exec-10] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				==> Parameters: 
+2019-03-11 14:53:55.401 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.listAllPerms -
+				==>  Preparing: SELECT p.id id, p.menu_name menuName, p.permission_name permissionName, p.required_permission requiredPerm FROM sys_permission p 
+2019-03-11 14:53:55.403 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.listAllPerms -
+				==> Parameters: 
+2019-03-11 14:53:55.410 [http-nio-8090-exec-6] DEBUG com.beeworkshop.spaback.dao.UsersDao.listAllPerms -
+				<==      Total: 10
+2019-03-11 14:53:55.421 [http-nio-8090-exec-10] DEBUG com.beeworkshop.spaback.dao.UsersDao.listRoles -
+				<==      Total: 30
+2019-03-11 14:54:08.434 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:54:08.436 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: beeworkshop(String)
+2019-03-11 14:54:08.439 [http-nio-8090-exec-5] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 7
+2019-03-11 14:55:35.157 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:55:35.159 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: beeworkshop(String)
+2019-03-11 14:55:35.165 [http-nio-8090-exec-7] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 7
+2019-03-11 14:56:27.836 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==>  Preparing: SELECT u.id userId, u.nickname nickname, u.role_id roleId, r.role_name roleName, p.menu_code menuCode, p.permission_code permissionCode FROM sys_user u LEFT JOIN sys_role r ON r.id = u.role_id LEFT JOIN sys_role_permission rp ON u.role_id = rp.role_id LEFT JOIN sys_permission p ON rp.permission_id = p.id AND rp.delete_status = '1' WHERE u.username = ? AND u.delete_status = '1' 
+2019-03-11 14:56:27.837 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				==> Parameters: beeworkshop(String)
+2019-03-11 14:56:27.842 [http-nio-8090-exec-2] DEBUG com.beeworkshop.spaback.dao.AAADao.getUserAccount -
+				<==      Total: 7
+2019-03-11 14:59:46.782 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:59:46.783 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:59:46.784 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:59:46.784 [http-nio-8090-exec-4] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:59:46.786 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				==>  Preparing: SELECT id roleId, role_name roleName FROM sys_role WHERE delete_status='1' 
+2019-03-11 14:59:46.787 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				==> Parameters: 
+2019-03-11 14:59:46.789 [http-nio-8090-exec-4] DEBUG com.beeworkshop.spaback.dao.UsersDao.getAllRoles -
+				<==      Total: 4
+2019-03-11 14:59:46.790 [http-nio-8090-exec-9] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:59:46.790 [http-nio-8090-exec-9] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:59:46.794 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==>  Preparing: SELECT count(0) FROM sys_user u WHERE u.delete_status = '1' 
+2019-03-11 14:59:46.794 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				==> Parameters: 
+2019-03-11 14:59:46.796 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.usersCount -
+				<==      Total: 1
+2019-03-11 14:59:46.797 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==>  Preparing: SELECT u.*, r.role_name roleName, CONCAT(p.menu_name, p.permission_name) permissionName FROM ( SELECT id userId, username username, nickname nickname, role_id roleId, delete_status deleteStatus, DATE_FORMAT(create_time, '%Y.%m.%d %T') createTime, DATE_FORMAT(update_time, '%Y.%m.%d %T') updateTime FROM sys_user WHERE delete_status = '1' ORDER BY id LIMIT ?, ? ) u LEFT JOIN sys_role r ON r.id = u.roleId LEFT JOIN sys_role_permission rp ON rp.role_id = r.id LEFT JOIN sys_permission p ON p.id = rp.permission_id ORDER BY u.userId 
+2019-03-11 14:59:46.798 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:59:46.806 [http-nio-8090-exec-9] DEBUG com.beeworkshop.spaback.dao.UsersDao.listUsers -
+				<==      Total: 26
+2019-03-11 14:59:57.457 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				用户权限的JSON为:{"menuList":["role","user","article"],"roleId":3,"nickname":"bee","roleName":"程序员","permissionList":["article:list","user:list","article:add","role:list","role:delete","user:update","role:add"],"userId":10008}
+2019-03-11 14:59:57.458 [http-nio-8090-exec-3] INFO  com.beeworkshop.spaback.commons.shiro.UserRealm -
+				本用户权限为:[article:list, user:list, article:add, role:list, role:delete, user:update, role:add]
+2019-03-11 14:59:57.459 [http-nio-8090-exec-3] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==>  Preparing: SELECT count(0) FROM article w WHERE w.delete_status = '1' 
+2019-03-11 14:59:57.460 [http-nio-8090-exec-3] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				==> Parameters: 
+2019-03-11 14:59:57.461 [http-nio-8090-exec-3] DEBUG c.b.spaback.dao.ArticlesDao.countArticles -
+				<==      Total: 1
+2019-03-11 14:59:57.463 [http-nio-8090-exec-3] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==>  Preparing: SELECT w.id id, w.content content, date_format(w.create_time, '%Y.%m.%d %T') createTime FROM article w WHERE w.delete_status = '1' ORDER BY w.id DESC LIMIT ?, ? 
+2019-03-11 14:59:57.464 [http-nio-8090-exec-3] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				==> Parameters: 0(Integer), 50(Integer)
+2019-03-11 14:59:57.468 [http-nio-8090-exec-3] DEBUG c.beeworkshop.spaback.dao.ArticlesDao.listArticles -
+				<==      Total: 6

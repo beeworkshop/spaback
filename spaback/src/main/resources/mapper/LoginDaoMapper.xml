@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace指向DAO的接口定义LoginDao -->
+<mapper namespace="com.beeworkshop.spaback.dao.LoginDao">
+	<!-- getLoginUser()是LoginDao中定义的方法 -->
+	<select id="getLoginUser"
+		resultType="com.alibaba.fastjson.JSONObject">
+		SELECT u.id userId, u.username username, u.password password, u.nickname nickName
+		FROM sys_user u
+		WHERE u.username = #{username}  <!-- username通过@Param引入 -->
+		AND u.password = #{password}  <!-- password通过@Param引入 -->
+		AND u.delete_status = '1'
+	</select>
+	<!-- @Param一般适用于2到3个参数的情形 -->
+
+</mapper>
