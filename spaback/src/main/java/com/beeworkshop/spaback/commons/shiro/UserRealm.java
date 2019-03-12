@@ -66,7 +66,7 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		// 获取用户名
 		String username = (String) token.getPrincipal();
-		// 获取用户密码
+		// 获取用户密码（已做MD5变换）
 		String password = new String((char[]) token.getCredentials());
 		// 访问数据库获取用户账号信息（保存在json中）
 		JSONObject user = loginService.getUserAccount(username, password);

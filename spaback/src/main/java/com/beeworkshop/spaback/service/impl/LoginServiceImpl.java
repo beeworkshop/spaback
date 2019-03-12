@@ -14,6 +14,7 @@ import com.beeworkshop.spaback.service.AAAService;
 import com.beeworkshop.spaback.service.LoginService;
 import com.beeworkshop.spaback.utils.CommonTools;
 import com.beeworkshop.spaback.utils.Constants;
+import com.beeworkshop.spaback.utils.HashMd5;
 
 /**
  * 
@@ -39,7 +40,10 @@ public class LoginServiceImpl implements LoginService {
 	public JSONObject loginAuthen(JSONObject json) {
 		// 取出用户名和密码
 		String username = json.getString("username");
-		String password = json.getString("password");
+		String password = json.getString("password"); // 明文
+
+		// 将明文密码MD5哈希变换
+		password = (new HashMd5()).hashMd5Encrypt(password, username + "\'s");
 
 		// 构建登录返回信息的初始json
 		JSONObject respInfo = new JSONObject();
@@ -62,6 +66,7 @@ public class LoginServiceImpl implements LoginService {
 	 */
 	@Override
 	public JSONObject getUserAccount(String username, String password) {
+		// password已经MD5变换了
 		return loginDao.getLoginUser(username, password);
 	}
 

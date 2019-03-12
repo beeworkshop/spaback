@@ -174,14 +174,14 @@ public class CommonTools {
 	/**
 	 * 判断字符串是否为空
 	 */
-	private static boolean isNullOrEmpty(String str) {
+	public static boolean isNullOrEmpty(String str) {
 		return null == str || "".equals(str) || "null".equals(str);
 	}
 
 	/**
 	 * 判断对象是否为空
 	 */
-	private static boolean isNullOrEmpty(Object obj) {
+	public static boolean isNullOrEmpty(Object obj) {
 		return null == obj || "".equals(obj);
 	}
 

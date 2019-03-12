@@ -14,6 +14,7 @@ import com.beeworkshop.spaback.dao.UsersDao;
 import com.beeworkshop.spaback.service.UsersService;
 import com.beeworkshop.spaback.utils.CommonTools;
 import com.beeworkshop.spaback.utils.ErrorDef;
+import com.beeworkshop.spaback.utils.HashMd5;
 
 /**
  * 
@@ -59,6 +60,13 @@ public class UsersServiceImpl implements UsersService {
 		if (exist > 0) {
 			return CommonTools.errorJson(ErrorDef.E10009);
 		}
+
+		// 将客户端传来的明文密码做MD5哈希变换
+		String username = json.getString("username");
+		String password = json.getString("password");
+		password = (new HashMd5()).hashMd5Encrypt(password, username + "\'s");
+		json.put("password", password);
+
 		usersDao.addUser(json);
 		return CommonTools.successJson();
 	}
@@ -68,6 +76,14 @@ public class UsersServiceImpl implements UsersService {
 	 */
 	@Override
 	public JSONObject updateUser(JSONObject json) {
+		// 对密码进行MD5哈希变换
+		String password = json.getString("password");
+		if (!CommonTools.isNullOrEmpty(password)) {
+			String username = json.getString("username");
+			password = (new HashMd5()).hashMd5Encrypt(password, username + "\'s");
+			json.put("password", password);
+		}
+
 		usersDao.updateUser(json);
 		return CommonTools.successJson();
 	}
